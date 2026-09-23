@@ -71,7 +71,7 @@ export default function Home() {
 
         <section className="section pricing" id="tarifas">
           <div className="container pricing-grid">
-            <Reveal><div><p className="eyebrow">VALORES ANUNCIADOS · OCTUBRE 2026</p><h2>Tu próxima salida,<br /><em>con todo claro.</em></h2><p>Agenda con al menos dos días de anticipación. Estos valores son por persona y la disponibilidad se confirma por WhatsApp.</p><div className="price-list"><div><span>Tabla SUP <small>1 hora 30 minutos</small></span><strong>$12.000 <small>por persona</small></strong></div><div><span>Kayak doble o triple <small>1 hora</small></span><strong>$9.000 <small>por persona</small></strong></div><div><span>Kayak individual <small>1 hora</small></span><strong>$15.000</strong></div></div><a href="#reserva" className="button button-dark">Preparar mi consulta ↗</a></div></Reveal>
+            <Reveal><div><p className="eyebrow">VALORES ANUNCIADOS · OCTUBRE 2026</p><h2>Tu próxima salida,<br /><em>con todo claro.</em></h2><p>Agenda con al menos un día de anticipación. Estos valores son por persona y la disponibilidad se confirma por WhatsApp.</p><div className="price-list"><div><span>Tabla SUP <small>1 hora 30 minutos</small></span><strong>$12.000 <small>por persona</small></strong></div><div><span>Kayak doble o triple <small>1 hora</small></span><strong>$9.000 <small>por persona</small></strong></div><div><span>Kayak individual <small>1 hora</small></span><strong>$15.000</strong></div></div><a href="#reserva" className="button button-dark">Preparar mi consulta ↗</a></div></Reveal>
             <Reveal><div className="pricing-photo"><Image src="/media/sup-clean.webp" alt="Persona sobre una tabla SUP en la laguna" fill sizes="(max-width: 700px) 100vw, 40vw" className="cover-image" /></div></Reveal>
           </div>
         </section>
@@ -98,6 +98,12 @@ export default function Home() {
         </section>
       </main>
       <footer><div className="container footer-grid"><Brand /><p>Laguna Grande<br />San Pedro de la Paz · Biobío</p><div><a href="https://www.instagram.com/aventurasnauticas.cl/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://wa.me/56977412620" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div><small>© 2026 Aventuras Náuticas</small></div></footer>
+      <aside className="agency-banner" aria-label="Desarrollo web por Agencia Darw">
+        <div className="container agency-banner-inner">
+          <div className="agency-copy"><span>DESARROLLO WEB · AGENCIA DARW</span><p>Esta experiencia digital fue creada por <strong>Agencia Darw.</strong></p></div>
+          <div className="agency-actions"><a href="https://darw.cl" target="_blank" rel="noopener noreferrer">Visitar darw.cl <span aria-hidden="true">↗</span></a><a href="https://wa.me/56926341222" target="_blank" rel="noopener noreferrer">Contactar a la agencia <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </aside>
       <FloatingWhatsApp />
     </div>
   );
