@@ -1,19 +1,13 @@
 import Image from "next/image";
 import { Brand } from "@/components/brand";
 import { SiteHeader } from "@/components/site-header";
-import { VideoCard } from "@/components/video-card";
+import { VideoCarousel } from "@/components/video-carousel";
 import { WhatsAppForm } from "@/components/whatsapp-form";
 import { FloatingWhatsApp } from "@/components/floating-whatsapp";
 import { Reveal } from "@/components/reveal";
 import { LagoonMap } from "@/components/lagoon-map";
 
 const mapUrl = "https://www.google.com/maps/search/?api=1&query=Laguna+Grande%2C+San+Pedro+de+la+Paz%2C+Chile";
-
-const films = [
-  { number: "01", title: "La laguna desde dentro", caption: "AVENTURAS NÁUTICAS", src: "/media/reel-aventuras.mp4", poster: "/media/group-clean.webp" },
-  { number: "02", title: "Un día para recordar", caption: "HISTORIAS EN EL AGUA", src: "/media/reel-isidora-small.mp4", poster: "/media/paddle-clean.webp" },
-  { number: "03", title: "Rema a tu manera", caption: "DESDE LA ORILLA", src: "/media/reel-nashinu.mp4", poster: "/media/selfie-clean.webp" },
-];
 
 const essentials = [
   { number: "01", title: "Ven preparado", text: "Trae ropa cómoda, bloqueador, sombrero, agua y una muda. Llega con tiempo para disfrutar tu salida desde el inicio." },
@@ -46,8 +40,8 @@ export default function Home() {
 
         <section className="section moments" id="videos">
           <div className="container">
-            <Reveal><div className="section-intro video-intro"><div><p className="eyebrow">ASÍ SE SIENTE</p><h2>Un vistazo real<br /><em>a la laguna.</em></h2></div><p>El agua, las risas y esa vista que cambia todo. Reproduce las historias y empieza a imaginar la tuya.</p></div></Reveal>
-            <div className="video-stage">{films.map((film, index) => <Reveal key={film.src}><VideoCard {...film} featured={index === 0} /></Reveal>)}</div>
+            <Reveal><div className="section-intro video-intro"><div><p className="eyebrow">ASÍ SE SIENTE</p><h2>Un vistazo real<br /><em>a la laguna.</em></h2></div><p>El agua, las risas y esa vista que cambia todo. Desliza el carrusel y reproduce cada historia para imaginar la tuya.</p></div></Reveal>
+            <VideoCarousel />
             <div className="video-outro"><span>3 MOMENTOS · UNA MISMA LAGUNA</span><a className="text-link" href="https://www.instagram.com/aventurasnauticas.cl/" target="_blank" rel="noopener noreferrer">Ver más en Instagram ↗</a></div>
           </div>
         </section>
